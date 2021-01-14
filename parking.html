@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parking Lot</title>
+    <!-- For car icon -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+    <link rel="stylesheet" href="./parking.css">
+</head>
+<body>
+    <h1>Parking Management system</h1>
+
+    <div id="wrapper">
+        <!-- Div containing car fonts-->
+        <div id="parking_layout">
+            <table cellspacing="20" cellpadding="8">
+                <tr class="row1">
+                    <td id="car1"> <div>1</div> <i class="fas fa-car"></i></td>
+                    <td id="car2"> <div>2</div> <i class="fas fa-car"></i></td>
+                    <td id="car3"> <div>3</div> <i class="fas fa-car"></i></td>
+                    <td id="car4"> <div>4</div> <i class="fas fa-car"></i></td>
+                    <td id="car5"> <div>5</div> <i class="fas fa-car"></i></td>
+                </tr>
+                <tr class="row2">
+                    <td id="car6"><div>6</div> <i class="fas fa-car"></i></td>
+                    <td id="car7"> <div>7</div><i class="fas fa-car"></i></td>
+                    <td id="car8"> <div>8</div><i class="fas fa-car"></i></td>
+                    <td id="car9"> <div>9</div><i class="fas fa-car"></i></td>
+                    <td id="car10"> <div>10</div><i class="fas fa-car"></i></td>
+                </tr>
+            </table>               
+        </div>
+        <!-- Div containing admin inputs-->
+        <div id="parking_lot">
+            <form action="" id="parkingForm">        
+                    <table>
+                        <tr>
+                            <td><label for="owner">Owner</label></td>
+                            <td> <input type="text" name="owner" id="owner"><br></td>
+                        </tr>
+                        <tr>
+                            <td><label for="car">Car Model</label></td>
+                            <td><input type="text" name="car" id="car"><br></td>
+                        </tr>
+                        <tr>
+                            <td><label for="color">Car Color</label></td>
+                            <td><input type="text" name="car" id="color"><br></td>
+                        </tr>
+                        <tr>
+                            <td><label for="registrationNo">Registration Number</label></td>
+                            <td><input type="text" name="registrationNo" id="registrationNo"><br></td>
+                        </tr>
+                        <tr>
+                            <td><label for="slotNo">Allocated Slot No</label></td>
+                            <td><input type="text" name="slotNo" id="slotNo"><br></td>
+                        </tr>
+        
+                        <tr>
+                            <td><label for="entryDate"> Entry Date</label></td>
+                            <td><input type="date" id="entryDate"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="exitDate"> Exit Date</label></td>
+                            <td><input type="date" name="exitDate" id="exitDate">   </td>
+                        </tr>
+                    </table>     
+                    <hr>   
+                    <button type="submit" id="submit">Add Car</button>          
+            </form>   
+        </div>  
+    </div>        
+    <div id="list_table">
+        <h1>List of Cars in Parking Lot</h1>
+        
+<table>
+    <tr>
+        <td>
+        <label for="pet-select">Filter by :</label>
+        <select name="vehicle" id="filter">
+            <option value="">--All--</option>
+            <option value="owner">Owner</option>
+            <option value="car">Car Model</option>
+            <option value="color">Car Color</option>
+            <option value="rrNo">Registration No</option>
+            <option value="slot">Slot No</option>
+            <option value="entry">Entry Date</option>
+            <option value="exit">Exit Date</option>
+        </select>
+    </td>
+    <td>
+        <input type="text" class="" id="searchInput" placeholder="Search...">
+    </td>
+</tr>
+</div>
+
+        
+        <br>
+        <table id="parkingTable">
+                <thead id="tableHead">
+                  <tr>
+                    <th>Owner</th>
+                    <th>Car Model</th>
+                    <th>Car Color</th>
+                    <th>Registration No</th>
+                    <th>Slot Number</th>
+                    <th>Entry Date</th>
+                    <th>Exit Date</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody id="tableBody">
+                 
+                </tbody>
+              </table>
+</div>
+    <script src="./parking.js"></script>
+</body>
+</html>

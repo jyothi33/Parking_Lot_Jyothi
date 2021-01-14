@@ -1,0 +1,152 @@
+h1{
+    text-align: center;
+    background-color: black;
+    color: whitesmoke;
+    margin: 0 12%;
+    padding: 1% 12%;
+}
+
+body{
+    background-color: white;
+    margin: 0;
+}
+
+td label{
+    font-weight: bolder;
+}
+
+table{
+    display: initial;
+}
+
+#parking_lot{   
+    text-align: center;
+    padding: 2% 2%;
+    margin:0 auto;
+}
+#list_table{   
+    text-align: center;
+    padding:0% 12% 2%;
+    margin:0 auto;
+}
+#parkingForm label{
+    display: flex;
+}
+#parkingForm input{
+    width: -webkit-fill-available;
+}
+
+#list_table h1{
+    margin: 0;
+}
+
+hr{
+    margin: 5% 10%;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.danger{
+    color: brown;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.success{
+    color: green;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+#parkingForm{
+    border: 2px solid black;
+    padding: 2% 0;
+}
+
+#submit {
+    display: inline-block;
+    padding:0.3em 1.2em;
+    margin:0 0.1em 0.1em 0;
+    border:0.16em solid rgba(255,255,255,0);
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    color:#FFFFFF;
+    text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+    text-align:center;
+    transition: all 0.2s;
+    background-color: #4e9af1; 
+}
+
+button:hover{
+    cursor: pointer;    
+}
+
+.delete {
+    display: block;
+    margin: auto;
+}
+
+#searchInput{    
+    margin: 2% 20%;
+    padding: 1%;
+}
+
+#parkingTable {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+#parkingTable td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+#parkingTable tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+  #parking_layout{      
+    border: 2px solid black;
+    margin: 0 auto;
+    padding: 2%;
+    align-self:center;
+  }
+
+#parking_layout table td{
+  text-align: center;
+  border: 1px solid black;
+}    
+
+td>i{
+    font-size: 3rem;
+}
+
+#wrapper {
+    display: flex;
+    padding: 2% 12%;
+  }
+  
+  #left {
+    flex: 0 0 65%;
+  }
+  
+  #right {
+    flex: 1;
+  }
+
+  .green{
+      color:green;
+  }
+
+  .blue{
+    color:blue;
+    font-size: 18px;
+}
+
+  td div{
+      font-weight: bolder;
+  }
