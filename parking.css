@@ -76,16 +76,12 @@ hr{
     text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
     text-align:center;
     transition: all 0.2s;
-    background-color: #4e9af1; 
+    background-color:#4e9af1;
 }
 
-button:hover{
-    cursor: pointer;    
-}
-
-.delete {
-    display: block;
-    margin: auto;
+.delete{
+    display:block;
+    margin:auto;
 }
 
 #searchInput{    
